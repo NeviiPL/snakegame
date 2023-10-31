@@ -1,5 +1,5 @@
 from turtle import Screen
-import snake
+from snake import *
 import time
 
 screen = Screen()
@@ -8,17 +8,16 @@ screen.bgcolor("black")
 screen.title("Snake by mnichu12")
 screen.tracer(0)
 
-snejk = snake.Snake()
-
-snaczek = snejk.new_snake()
-
-print(snaczek)
+snakes = Snake()
 
 
-# game_is_on = True
-# while game_is_on:
-#     screen.update()
-#     time.sleep(0.1)
+
+
+game_is_on = True
+while game_is_on:
+    screen.update()
+    time.sleep(0.1)
+    snakes.move(snakes)
 
 
 

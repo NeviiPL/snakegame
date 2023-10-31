@@ -4,7 +4,7 @@ from turtle import Turtle
 class Snake:
 
     def __init__(self):
-        return
+        self.new_snake()
 
 
     def new_snake(self):
@@ -18,6 +18,7 @@ class Snake:
             new_segment.goto(x=snake_square_pos_x, y=0)
             snake_body.append(new_segment)
             snake_square_pos_x -= 20
+        return snake_body
 
     def move(self, snake_body):
         for seg_num in range(len(snake_body) - 1, 0, -1):
